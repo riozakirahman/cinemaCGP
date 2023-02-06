@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00a0de"
+    tools:context=".DetailMovieActivity"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/idMovieImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@color/white"
+        />
+    <TextView
+        android:id="@+id/idTVTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idMovieImg"
+        android:textColor="@color/white"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Judul"
+        android:textSize="25dp"/>
+    <Button
+        android:id="@+id/idBtnBook"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVOverview"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Book"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:id="@+id/idTVRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVTitle"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="rating"
+        android:textSize="20dp"
+        android:textColor="#d7c447"
+        />
+    <TextView
+        android:id="@+id/idTVOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVRate"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:maxLines="10"
+        android:text="Description"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>
